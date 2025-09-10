@@ -1,6 +1,12 @@
+// child components are imported at top in app.jsx
+import Header from "./Header.jsx"; 
+
 export default function App() {
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
+    <div>
+      {/*using the header component*/} 
+      <Header />
+
       <h1>Hello World 🚀</h1>
       <p>React + Vite is working!</p>
 
