@@ -1,5 +1,6 @@
 // child components are imported at top in app.jsx
 import Header from "./Header.jsx"; 
+import Footer from "./Footer.jsx";
 
 export default function App() {
   return (
@@ -9,9 +10,10 @@ export default function App() {
 
       <h1>Hello World 🚀</h1>
       <p>React + Vite is working!</p>
-
       <h1>react has sooo many files!</h1>
       <p>it looks soo complicated, i hope i master it one day</p>
+
+      <Footer/>
     </div>
   );
 }
