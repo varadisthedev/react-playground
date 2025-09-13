@@ -1,0 +1,62 @@
+# origin of react + intro vid 1 
+react is a open source js library for UI components
+created by facebook 
+focus only for UI, that is it 
+
+react has a components based archetecture
+website = header + footer + sitemap (these are components)
+
+## advantages
+- code reusablity: you dont have to copy code to do the same thing again and again 
+- react is declarative: just tell it what you want to do 
+
+# folder structure
+- when using VITE + react
+- If we use CRA (Create react app, the vanilla method) then the entry point for react is via index.js
+- for VITE, entry point is main.jsx the main.jsx is similar to how we have a main() in typicall C programs
+- imports of VITE are slightly different from CRA (vanilla)
+
+# react components
+- components are a part of UI
+- a basic site = header + footer + sidenav + main content + fotter
+- the root component, aka app component contains all the components which you create
+- hence root is the parent of all components
+- component are reusable, you can alter the style of each component
+- a component can contain other components (nesting is allowed)
+
+# types of components
+1. functional component (FC)
+- directly returns a HTML 
+- just js functions
+obj of props--> [FC] --> return HTML(JSX)
+
+2. class component
+- just eS6 classes
+- create a class which extend the component class 
+- then create a render method to return the HTML 
+- since its a component which uses a class, it can hence store some data for its state 
+`import React from 'react'
+import { Component } from 'react'
+
+class Welcome extends Component{
+    render(){
+        return <h1></h1>
+    }
+}
+`
+
+
+
+
+both have their use cases. which we will see sooon
+
+# jsx (java scipt xml)
+- extension to js 
+- jsx tags have tag name , attribute, and children
+- jsx is then converted to pure js 
+
+# things which are changed in JSX
+- class -> className
+- for -> htmlFor 
+- onclick -> onClick 
+- tabindex -> tabindex
