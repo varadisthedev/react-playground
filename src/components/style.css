@@ -1,0 +1,13 @@
+.CounterText{
+    font-size: 66px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(149, 149, 149);
+    
+} 
+.CounterMain {
+  display: flex;
+  flex-direction: row;   
+  justify-content: center;  
+  align-items: center;      
+  height: 100vh;       
+}    
