@@ -11,3 +11,12 @@
   align-items: center;      
   height: 100vh;       
 }    
+
+
+/* for defining some things */
+.primary{
+  color: navy
+}
+.font-xl{
+  font-size: 83px;
+}

@@ -15,7 +15,11 @@ import EventBind from "./components/EventBind.jsx";
 import ParentComponent from "./components/ParentComponent.jsx";
 import UserGreetings from "./components/UserGreetings.jsx";
 import NameList from "./components/NameList.jsx"
-
+import Stylesheet from "./components/Stylesheet.jsx";
+import Inline from "./Inline.jsx";
+import './appStyles.css'
+//importing a module stylesheet
+import styles from './appStyle.module.css'
 export default function App() {
   // return (
   //   <div>
@@ -60,10 +64,21 @@ export default function App() {
   // );
     return (
       <div>
-        <ParentComponent/>
+        {/* <ParentComponent/>
         <UserGreetings/>
 
-        <NameList/>
+        <NameList/> */}
+
+        {/* adding css in react */}
+        <Stylesheet  primary={true}/>
+        {/* doing it with inline styling */}
+        <Inline/>
+
+        {/* using the css, vanilla and modules */}
+        <h1 className='error'>error caught</h1>
+        <h1 className={styles.success}>sucess! yayyyyy</h1>
+          {/* normal css is by deafault also applied to child components, while the module css is not */}
+          {/* that may cause confilicts with css */}
       </div>
     )
 }
