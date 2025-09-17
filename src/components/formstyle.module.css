@@ -1,0 +1,29 @@
+.forms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input,textarea{ 
+    background-color: rgb(173, 193, 234);
+    height: 50px;
+    width: 300px;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 41px;
+    font-size: 34px;
+}
+label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+select{
+    background-color: rgb(59, 134, 238);
+    height: 50px;
+    width: 120px;
+    border-radius: 20px;
+    font-size: 23px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

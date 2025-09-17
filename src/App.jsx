@@ -20,6 +20,9 @@ import Inline from "./Inline.jsx";
 import './appStyles.css'
 //importing a module stylesheet
 import styles from './appStyle.module.css'
+import Form from "./components/Form.jsx";
+
+
 export default function App() {
   // return (
   //   <div>
@@ -70,15 +73,21 @@ export default function App() {
         <NameList/> */}
 
         {/* adding css in react */}
-        <Stylesheet  primary={true}/>
+        {/* <Stylesheet  primary={true}/> */}
         {/* doing it with inline styling */}
-        <Inline/>
+        {/* <Inline/> */}
 
         {/* using the css, vanilla and modules */}
-        <h1 className='error'>error caught</h1>
-        <h1 className={styles.success}>sucess! yayyyyy</h1>
+        {/* <h1 className='error'>error caught</h1>
+        <h1 className={styles.success}>sucess! yayyyyy</h1> */}
           {/* normal css is by deafault also applied to child components, while the module css is not */}
           {/* that may cause confilicts with css */}
+          
+
+        {/* form in jsx */}
+        <Form/>
+      
+      
       </div>
     )
 }
