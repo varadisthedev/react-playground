@@ -1,0 +1,11 @@
+only for class components
+
+# lifecycle methods
+- mounting 
+when an instance is created and inserted in dom 
+- updating 
+when comp is re rendered, due to change in props or state
+- unmounting 
+when a comp is removed from DOM 
+- error handling 
+when error is encountered in lifecycle

@@ -21,6 +21,7 @@ import './appStyles.css'
 //importing a module stylesheet
 import styles from './appStyle.module.css'
 import Form from "./components/Form.jsx";
+import LifeCycleA from "./components/LifeCycleA.jsx";
 
 
 export default function App() {
@@ -85,7 +86,10 @@ export default function App() {
           
 
         {/* form in jsx */}
-        <Form/>
+        {/* <Form/> */}
+        
+        {/* lifecycle method in react */}
+        <LifeCycleA/>
       
       
       </div>
