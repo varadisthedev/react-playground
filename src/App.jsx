@@ -22,6 +22,7 @@ import './appStyles.css'
 import styles from './appStyle.module.css'
 import Form from "./components/Form.jsx";
 import LifeCycleA from "./components/LifeCycleA.jsx";
+import Fragments from "./components/Fragments.jsx";
 
 
 export default function App() {
@@ -89,7 +90,8 @@ export default function App() {
         {/* <Form/> */}
         
         {/* lifecycle method in react */}
-        <LifeCycleA/>
+        {/* <LifeCycleA/> */}
+        <Fragments/>
       
       
       </div>
