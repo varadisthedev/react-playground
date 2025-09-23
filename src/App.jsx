@@ -1,30 +1,35 @@
 // child components are imported at top in app.jsx
-import Header from "./Header.jsx"; 
-import Footer from "./Footer.jsx";
-import Greet from "./components/Greet.jsx";
-import Bye from "./components/DefaultExport.jsx"
-import ClassCompWelcome from "./components/ClassComponent.jsx"
-import Hello from "./components/Hello.jsx"
-import CreateEleobj from "./components/CreateEle.jsx"
-import Welcome from "./components/Welcome.jsx";
-import Message from "./components/Message.jsx";
-import Counter from "./components/counter.jsx";
-import FunctionClick from "./components/FunctionClick.jsx";
-import ClassClick from "./components/ClassClick.jsx"
-import EventBind from "./components/EventBind.jsx";
-import ParentComponent from "./components/ParentComponent.jsx";
-import UserGreetings from "./components/UserGreetings.jsx";
-import NameList from "./components/NameList.jsx"
-import Stylesheet from "./components/Stylesheet.jsx";
-import Inline from "./Inline.jsx";
-import './appStyles.css'
-//importing a module stylesheet
-import styles from './appStyle.module.css'
-import Form from "./components/Form.jsx";
-import LifeCycleA from "./components/LifeCycleA.jsx";
-import Fragments from "./components/Fragments.jsx";
-
-
+// import Header from "./Header.jsx"; 
+// import Footer from "./Footer.jsx";
+// import Greet from "./components/Greet.jsx";
+// import Bye from "./components/DefaultExport.jsx"
+// import ClassCompWelcome from "./components/ClassComponent.jsx"
+// import Hello from "./components/Hello.jsx"
+// import CreateEleobj from "./components/CreateEle.jsx"
+// import Welcome from "./components/Welcome.jsx";
+// import Message from "./components/Message.jsx";
+// import Counter from "./components/counter.jsx";
+// import FunctionClick from "./components/FunctionClick.jsx";
+// import ClassClick from "./components/ClassClick.jsx"
+// import EventBind from "./components/EventBind.jsx";
+// import ParentComponent from "./components/ParentComponent.jsx";
+// import UserGreetings from "./components/UserGreetings.jsx";
+// import NameList from "./components/NameList.jsx"
+// //import Stylesheet from "./components/Stylesheet.jsx";
+// //import Inline from "./Inline.jsx";
+// // import './appStyles.css'
+// //importing a module stylesheet
+// //import styles from './appStyle.module.css'
+// import Form from "./components/Form.jsx";
+// import LifeCycleA from "./components/LifeCycleA.jsx";
+// import Fragments from "./components/Fragments.jsx";
+// import PureComp from "./components/PureComp.jsx";
+// import ParentComp from "./components/ParentComp.jsx";
+import Callbackref from "./components/Callbackref.jsx";
+import ErrorBoundary from "./components/ErrorBoundary.jsx";
+import Hero from "./components/Hero.jsx";
+import PortalDemo from "./components/PortalDemo.jsx";
+import RefsDemo from "./components/RefsDemo.jsx";
 export default function App() {
   // return (
   //   <div>
@@ -68,32 +73,63 @@ export default function App() {
   //   </div>
   // );
     return (
-      <div>
-        {/* <ParentComponent/>
-        <UserGreetings/>
+      // <div>
+      //   {/* <ParentComponent/>
+      //   <UserGreetings/>
 
-        <NameList/> */}
+      //   <NameList/> */}
 
-        {/* adding css in react */}
-        {/* <Stylesheet  primary={true}/> */}
-        {/* doing it with inline styling */}
-        {/* <Inline/> */}
+      //   {/* adding css in react */}
+      //   {/* <Stylesheet  primary={true}/> */}
+      //   {/* doing it with inline styling */}
+      //   {/* <Inline/> */}
 
-        {/* using the css, vanilla and modules */}
-        {/* <h1 className='error'>error caught</h1>
-        <h1 className={styles.success}>sucess! yayyyyy</h1> */}
-          {/* normal css is by deafault also applied to child components, while the module css is not */}
-          {/* that may cause confilicts with css */}
+      //   {/* using the css, vanilla and modules */}
+      //   {/* <h1 className='error'>error caught</h1>
+      //   <h1 className={styles.success}>sucess! yayyyyy</h1> */}
+      //     {/* normal css is by deafault also applied to child components, while the module css is not */}
+      //     {/* that may cause confilicts with css */}
           
 
-        {/* form in jsx */}
-        {/* <Form/> */}
+      //   {/* form in jsx */}
+      //   {/* <Form/> */}
         
-        {/* lifecycle method in react */}
-        {/* <LifeCycleA/> */}
-        <Fragments/>
+      //   {/* lifecycle method in react */}
+      //   {/* <LifeCycleA/> */}
+       
       
       
-      </div>
+      // </div>
+      //  <Fragments/>
+
+      // <PureComp/>
+       //<ParentComp/>
+      <>
+      {/* <RefsDemo/> */}
+      {/* <Callbackref/> */}
+      <PortalDemo/> 
+
+      {/* <ErrorBoundary>
+          <Hero heroName="batman"/>
+      </ErrorBoundary>
+
+      <ErrorBoundary>
+        <Hero heroName="hulk"/>
+      </ErrorBoundary>
+         
+      <ErrorBoundary>
+        <Hero heroName="iron-man"/>
+      </ErrorBoundary>
+
+      <ErrorBoundary>
+        <Hero heroName="joker"/>
+      </ErrorBoundary>
+
+      <ErrorBoundary>
+        <Hero heroName="hulk"/>
+      </ErrorBoundary> */}
+
+      </>
+
     )
 }
