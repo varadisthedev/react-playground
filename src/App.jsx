@@ -26,10 +26,15 @@
 // import PureComp from "./components/PureComp.jsx";
 // import ParentComp from "./components/ParentComp.jsx";
 import Callbackref from "./components/Callbackref.jsx";
+import ClickCounter2 from "./components/ClickCounter2.jsx";
 import ErrorBoundary from "./components/ErrorBoundary.jsx";
 import Hero from "./components/Hero.jsx";
 import PortalDemo from "./components/PortalDemo.jsx";
 import RefsDemo from "./components/RefsDemo.jsx";
+import { UserProvider } from "./components/userContext.js";
+import HoverCounter2 from "./HoverCounter2.jsx";
+import User from "./User.jsx";
+import ComponentC from "./components/ComponentC.jsx";
 export default function App() {
   // return (
   //   <div>
@@ -107,7 +112,7 @@ export default function App() {
       <>
       {/* <RefsDemo/> */}
       {/* <Callbackref/> */}
-      <PortalDemo/> 
+      {/* <PortalDemo/>  */}
 
       {/* <ErrorBoundary>
           <Hero heroName="batman"/>
@@ -128,6 +133,17 @@ export default function App() {
       <ErrorBoundary>
         <Hero heroName="hulk"/>
       </ErrorBoundary> */}
+      {/* <ClickCounter2/>
+      <HoverCounter2/>
+      <User render={(isLoggedIn)=>isLoggedIn? 'varad' : 'guest login'}/> */}
+
+
+      <UserProvider value="varad">
+        <ComponentC/>
+      </UserProvider>
+
+    
+
 
       </>
 
