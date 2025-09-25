@@ -5,14 +5,14 @@ import { UserConsumer } from './userContext'
   render() {
     return (
         <>
-        <h3>component E here!</h3>
-      <UserConsumer>
-        {
-        (username)=>{
-            return <h2>hello {username}</h2>
-        }
-        }
-      </UserConsumer>
+          <h3>component E here!</h3>
+          <UserConsumer>
+            {
+              (username)=>{
+                return <h2>hello {username}</h2>
+              }
+            }
+          </UserConsumer>
         </>
         
     )

@@ -33,7 +33,7 @@ import PortalDemo from "./components/PortalDemo.jsx";
 import RefsDemo from "./components/RefsDemo.jsx";
 import { UserProvider } from "./components/userContext.js";
 import HoverCounter2 from "./HoverCounter2.jsx";
-import User from "./User.jsx";
+import User from "./components/User.jsx";
 import ComponentC from "./components/ComponentC.jsx";
 export default function App() {
   // return (
@@ -133,14 +133,14 @@ export default function App() {
       <ErrorBoundary>
         <Hero heroName="hulk"/>
       </ErrorBoundary> */}
-      {/* <ClickCounter2/>
+      <ClickCounter2/>
       <HoverCounter2/>
-      <User render={(isLoggedIn)=>isLoggedIn? 'varad' : 'guest login'}/> */}
+      <User render={(isLoggedIn)=>isLoggedIn? 'varad' : 'guest login'}/> 
 
 
-      <UserProvider value="varad">
+      {/* <UserProvider value="varad">
         <ComponentC/>
-      </UserProvider>
+      </UserProvider> */}
 
     
 
