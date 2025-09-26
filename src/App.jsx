@@ -133,15 +133,15 @@ export default function App() {
       <ErrorBoundary>
         <Hero heroName="hulk"/>
       </ErrorBoundary> */}
-      <ClickCounter2/>
+      {/* <ClickCounter2/>
       <HoverCounter2/>
-      <User render={(isLoggedIn)=>isLoggedIn? 'varad' : 'guest login'}/> 
+      <User render={(isLoggedIn)=>isLoggedIn? 'varad' : 'guest login'}/>  */}
 
 
       {/* <UserProvider value="varad">
         <ComponentC/>
       </UserProvider> */}
-
+  
     
 
 
